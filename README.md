@@ -1,15 +1,12 @@
 **0. Main Environments**
-- python 3.8
-- [pytorch 1.8.0](https://download.pytorch.org/whl/cu111/torch-1.8.0%2Bcu111-cp38-cp38-win_amd64.whl)
-- [torchvision 0.9.0](https://download.pytorch.org/whl/cu111/torchvision-0.9.0%2Bcu111-cp38-cp38-linux_x86_64.whl)
+- pytorch==2.8.0
+- cuda==11.8
+- python==3.8
 
 **1. Prepare the dataset.**
+- After downloading the datasets, you are supposed to put them into './data/' and , and the file format reference is as follows.
 
-- The ISIC17 and ISIC18 datasets, divided into a 7:3 ratio, can be found here {[Baidu](https://pan.baidu.com/s/1Y0YupaH21yDN5uldl7IcZA?pwd=dybm) or [GoogleDrive](https://drive.google.com/file/d/1XM10fmAXndVLtXWOt5G0puYSQyI2veWy/view?usp=sharing)}. 
-
-- After downloading the datasets, you are supposed to put them into './data/isic17/' and './data/isic18/', and the file format reference is as follows. (take the ISIC17 dataset as an example.)
-
-- './data/isic17/'
+- './data/'
   - train
     - images
       - .png
@@ -23,4 +20,4 @@
 
 **2. Obtain the outputs.**
 - After trianing, you could obtain the outputs in './results/'
-python predict.py
+run python predict.py
